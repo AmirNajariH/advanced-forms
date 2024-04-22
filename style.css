@@ -21,7 +21,47 @@
         -webkit-font-smoothing: antialiased !important;
     }
 
-
+    span.text-danger {
+        border-bottom-color: rgb(226, 35, 57) !important;
+        border-bottom-style: none !important;
+        border-bottom-width: 0px !important;
+        border-image-outset: 0 !important;
+        border-image-repeat: stretch !important;
+        border-image-slice: 100% !important;
+        border-image-source: none !important;
+        border-image-width: 1 !important;
+        border-left-color: rgb(226, 35, 57) !important;
+        border-left-style: none !important;
+        border-left-width: 0px !important;
+        border-right-color: rgb(226, 35, 57) !important;
+        border-right-style: none !important;
+        border-right-width: 0px !important;
+        border-top-color: rgb(226, 35, 57) !important;
+        border-top-style: none !important;
+        border-top-width: 0px !important;
+        box-sizing: border-box !important;
+        color: rgb(226, 35, 57) !important;
+        cursor: help !important;
+        display: block !important;
+        float: left !important;
+        font-family: "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+        font-size: 16px !important;
+        font-weight: 600 !important;
+        height: 24px !important;
+        image-rendering: -webkit-optimize-contrast !important;
+        letter-spacing: 0.15px !important;
+        line-height: 24px !important;
+        margin-right: 4px !important;
+        pointer-events: auto !important;
+        text-decoration-color: rgb(226, 35, 57) !important;
+        text-decoration-line: none !important;
+        text-decoration-style: solid !important;
+        text-decoration-thickness: auto !important;
+        text-size-adjust: 100% !important;
+        width: 8.96875px !important;
+        -webkit-font-smoothing: antialiased !important;
+    }
+    
     .textfield {
         appearance: none !important;
         background-color: rgb(255, 255, 255) !important;
@@ -96,7 +136,6 @@
         -webkit-border-image: none !important;
     }
     
-
     .textfield:hover {
         background-color: rgb(245, 245, 245) !important;
         border-bottom-color: rgb(0, 62, 125) !important;
@@ -117,7 +156,6 @@
         outline-width: 3px !important;
     }
 
-    
     .overauto {
         
     }
@@ -355,8 +393,3 @@
         -webkit-rtl-ordering: logical !important;
         -webkit-border-image: none !important;
     }
-    
-
-
-
-
