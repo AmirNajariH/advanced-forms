@@ -1,56 +1,362 @@
-/* This file is using css nesting: 
-    1. for having more information about the browsers that support this feature have a look at: https://caniuse.com/css-nesting
-    2. The production version of the file might not have this feature based on when it is published and what browsers are supporting nesting features 
+/*
+    Advanced-forms:
+    This needs to be included in every advanced forms through squiz advanced forms portal. 
 */
+    label {
+        box-sizing: border-box !important;
+        color: rgb(65, 65, 65) !important;
+        cursor: default !important;
+        display: block !important;
+        font-family: "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+        font-size: 16px !important;
+        font-weight: 600 !important;
+        height: 24px !important;
+        image-rendering: -webkit-optimize-contrast !important;
+        letter-spacing: 0.15px !important;
+        line-height: 24px !important;
+        pointer-events: auto !important;
+        text-size-adjust: 100% !important;
+        vertical-align: middle !important;
+        width: 884.172px !important;
+        -webkit-font-smoothing: antialiased !important;
+    }
 
 
-.form-group {
-    .form-control {
+    .textfield {
+        appearance: none !important;
+        background-color: rgb(255, 255, 255) !important;
+        border-bottom-color: rgb(122, 122, 122) !important;
+        border-bottom-left-radius: 4px !important;
+        border-bottom-right-radius: 4px !important;
+        border-bottom-style: solid !important;
+        border-bottom-width: 2px !important;
+        border-image-outset: 0 !important;
+        border-image-repeat: stretch !important;
+        border-image-slice: 100% !important;
+        border-image-source: none !important;
+        border-image-width: 1 !important;
+        border-left-color: rgb(122, 122, 122) !important;
+        border-left-style: solid !important;
+        border-left-width: 2px !important;
+        border-right-color: rgb(122, 122, 122) !important;
+        border-right-style: solid !important;
+        border-right-width: 2px !important;
+        border-top-color: rgb(122, 122, 122) !important;
+        border-top-left-radius: 4px !important;
+        border-top-right-radius: 4px !important;
+        border-top-style: solid !important;
+        border-top-width: 2px !important;
+        box-sizing: border-box !important;
+        color: rgb(65, 65, 65) !important;
+        cursor: text !important;
+        display: block !important;
+        font-family: "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+        font-feature-settings: normal !important;
+        font-kerning: auto !important;
+        font-optical-sizing: auto !important;
+        font-size: 16px !important;
+        font-stretch: 100% !important;
+        font-style: normal !important;
+        font-variant-alternates: normal !important;
+        font-variant-caps: normal !important;
+        font-variant-east-asian: normal !important;
+        font-variant-ligatures: normal !important;
+        font-variant-numeric: normal !important;
+        font-variant-position: normal !important;
+        font-variation-settings: normal !important;
+        font-weight: 400 !important;
+        height: 52px !important;
+        image-rendering: -webkit-optimize-contrast !important;
+        letter-spacing: normal !important;
+        line-height: 24px !important;
+        margin-bottom: 0px !important;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+        margin-top: 8px !important;
+        max-width: 48.5% !important;
+        padding-block-end: 12px !important;
+        padding-block-start: 12px !important;
+        padding-bottom: 12px !important;
+        padding-inline-end: 16px !important;
+        padding-inline-start: 16px !important;
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+        padding-top: 12px !important;
+        pointer-events: auto !important;
+        text-align: start !important;
+        text-indent: 0px !important;
+        text-rendering: auto !important;
+        text-shadow: none !important;
+        text-size-adjust: 100% !important;
+        text-transform: none !important;
+        width: 428.812px !important;
+        word-spacing: 0px !important;
+        -webkit-font-smoothing: antialiased !important;
+        -webkit-rtl-ordering: logical !important;
+        -webkit-border-image: none !important;
+    }
+    
+
+    .textfield:hover {
+        background-color: rgb(245, 245, 245) !important;
+        border-bottom-color: rgb(0, 62, 125) !important;
+        border-left-color: rgb(0, 62, 125) !important;
+        border-right-color: rgb(0, 62, 125) !important;
+        border-top-color: rgb(0, 62, 125) !important;
+    }
+
+    .textfield:focus {
+        background-color: rgb(255, 255, 255) !important;
+        border-bottom-color: rgb(235, 235, 235) !important;
+        border-left-color: rgb(235, 235, 235) !important;
+        border-right-color: rgb(235, 235, 235) !important;
+        border-top-color: rgb(235, 235, 235) !important;
+        outline-color: rgb(0, 133, 179) !important;
+        outline-offset: 2px !important;
+        outline-style: solid !important;
+        outline-width: 3px !important;
+    }
+
+    
+    .overauto {
         
-        &.textfield {
-             
-        }
-    
-        &.overauto {
+    }
 
+    .dropdown {
+        align-items: center !important;
+        appearance: none !important;
+        background-color: rgb(245, 245, 245) !important;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath fill='currentColor' d='M4.251 181.1C7.392 177.7 11.69 175.1 16 175.1c3.891 0 7.781 1.406 10.86 4.25l197.1 181.1l197.1-181.1c6.5-6 16.64-5.625 22.61 .9062c6 6.5 5.594 16.59-.8906 22.59l-208 192c-6.156 5.688-15.56 5.688-21.72 0l-208-192C-1.343 197.7-1.749 187.6 4.251 181.1z'/%3E%3C/svg%3E") !important;
+        background-position-x: calc(100% - 11px) !important;
+        background-position-y: 50% !important;
+        background-repeat: no-repeat !important;
+        background-size: 16px !important;
+        border-bottom-color: rgb(122, 122, 122) !important;
+        border-bottom-left-radius: 0px !important;
+        border-bottom-right-radius: 0px !important;
+        border-bottom-style: solid !important;
+        border-bottom-width: 2px !important;
+        border-image-outset: 0 !important;
+        border-image-repeat: stretch !important;
+        border-image-slice: 100% !important;
+        border-image-source: none !important;
+        border-image-width: 1 !important;
+        border-left-color: rgb(122, 122, 122) !important;
+        border-left-style: solid !important;
+        border-left-width: 0px !important;
+        border-right-color: rgb(122, 122, 122) !important;
+        border-right-style: solid !important;
+        border-right-width: 0px !important;
+        border-top-color: rgb(122, 122, 122) !important;
+        border-top-left-radius: 4px !important;
+        border-top-right-radius: 4px !important;
+        border-top-style: solid !important;
+        border-top-width: 0px !important;
+        box-sizing: border-box !important;
+        color: rgb(99, 99, 99) !important;
+        cursor: pointer !important;
+        display: inline-block !important;
+        font-family: "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+        font-feature-settings: normal !important;
+        font-kerning: auto !important;
+        font-optical-sizing: auto !important;
+        font-size: 16px !important;
+        font-stretch: 100% !important;
+        font-style: normal !important;
+        font-variant-alternates: normal !important;
+        font-variant-caps: normal !important;
+        font-variant-east-asian: normal !important;
+        font-variant-ligatures: normal !important;
+        font-variant-numeric: normal !important;
+        font-variant-position: normal !important;
+        font-variation-settings: normal !important;
+        font-weight: 400 !important;
+        height: 52px !important;
+        image-rendering: -webkit-optimize-contrast !important;
+        letter-spacing: normal !important;
+        line-height: 24px !important;
+        margin-bottom: 0px !important;
+        margin-left: 4px !important;
+        margin-right: 12px !important;
+        margin-top: 8px !important;
+        overflow-x: visible !important;
+        overflow-y: visible !important;
+        padding-bottom: 12px !important;
+        padding-left: 18px !important;
+        padding-right: 18px !important;
+        padding-top: 14px !important;
+        position: relative !important;
+        text-align: start !important;
+        text-indent: 0.01px !important;
+        text-overflow: clip !important;
+        text-rendering: auto !important;
+        text-shadow: none !important;
+        text-size-adjust: 100% !important;
+        text-transform: none !important;
+        text-wrap: nowrap !important;
+        vertical-align: middle !important;
+        white-space-collapse: preserve !important;
+        width: 900.75px !important;
+        word-spacing: 0px !important;
+        -webkit-font-smoothing: antialiased !important;
+        -webkit-rtl-ordering: logical !important;
+        -webkit-border-image: none !important;
+    }
     
-        }
+
+    .dropdown option {
+        box-sizing: content-box !important;
+        color: rgb(99, 99, 99) !important;
+        cursor: pointer !important;
+        display: block !important;
+        font-family: "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+        font-feature-settings: normal !important;
+        font-kerning: auto !important;
+        font-optical-sizing: auto !important;
+        font-size: 16px !important;
+        font-stretch: 100% !important;
+        font-style: normal !important;
+        font-variant-alternates: normal !important;
+        font-variant-caps: normal !important;
+        font-variant-east-asian: normal !important;
+        font-variant-ligatures: normal !important;
+        font-variant-numeric: normal !important;
+        font-variant-position: normal !important;
+        font-variation-settings: normal !important;
+        font-weight: 400 !important;
+        height: auto !important;
+        image-rendering: -webkit-optimize-contrast !important;
+        letter-spacing: normal !important;
+        line-height: 24px !important;
+        min-height: 19.2px !important;
+        padding-bottom: 1px !important;
+        padding-left: 2px !important;
+        padding-right: 2px !important;
+        padding-top: 0px !important;
+        text-align: start !important;
+        text-indent: 0.01px !important;
+        text-rendering: auto !important;
+        text-shadow: none !important;
+        text-size-adjust: 100% !important;
+        text-transform: none !important;
+        text-wrap: nowrap !important;
+        white-space-collapse: collapse !important;
+        width: auto !important;
+        word-spacing: 0px !important;
+        -webkit-font-smoothing: antialiased !important;
+        -webkit-rtl-ordering: logical !important;
+    }
     
-        &.dropdown {
-    
-            option {
-    
-            }
-    
-        }
+
+    .radio-group {
+        
     
     }
 
-    .radio-group {
-        label {
+    .radio-group label {
 
-        }
+    }
 
-        .radio {
-        
-        }
+    .radio-group .radio {
     
     }
 
     .checkbox {
-        label {
 
-        }
+    }
 
-        input {
+    .checkbox label {
 
-        }
+    }
+
+    .checkbox input {
+
     }
     
     button, .btn {
-
+        align-items: flex-start !important;
+        appearance: auto !important;
+        background-color: rgb(9, 84, 159) !important;
+        border-bottom-color: rgb(9, 84, 159) !important;
+        border-bottom-left-radius: 4px !important;
+        border-bottom-right-radius: 4px !important;
+        border-bottom-style: solid !important;
+        border-bottom-width: 3px !important;
+        border-image-outset: 0 !important;
+        border-image-repeat: stretch !important;
+        border-image-slice: 100% !important;
+        border-image-source: none !important;
+        border-image-width: 1 !important;
+        border-left-color: rgb(9, 84, 159) !important;
+        border-left-style: solid !important;
+        border-left-width: 3px !important;
+        border-right-color: rgb(9, 84, 159) !important;
+        border-right-style: solid !important;
+        border-right-width: 3px !important;
+        border-top-color: rgb(9, 84, 159) !important;
+        border-top-left-radius: 4px !important;
+        border-top-right-radius: 4px !important;
+        border-top-style: solid !important;
+        border-top-width: 3px !important;
+        box-sizing: border-box !important;
+        color: rgb(255, 255, 255) !important;
+        cursor: pointer !important;
+        display: inline-block !important;
+        font-family: "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+        font-feature-settings: normal !important;
+        font-kerning: auto !important;
+        font-optical-sizing: auto !important;
+        font-size: 16px !important;
+        font-stretch: 100% !important;
+        font-style: normal !important;
+        font-variant-alternates: normal !important;
+        font-variant-caps: normal !important;
+        font-variant-east-asian: normal !important;
+        font-variant-ligatures: normal !important;
+        font-variant-numeric: normal !important;
+        font-variant-position: normal !important;
+        font-variation-settings: normal !important;
+        font-weight: 400 !important;
+        height: 54px !important;
+        image-rendering: -webkit-optimize-contrast !important;
+        letter-spacing: normal !important;
+        line-height: 28px !important;
+        margin-bottom: 0px !important;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+        margin-top: 0px !important;
+        min-width: 140px !important;
+        padding-block-end: 10px !important;
+        padding-block-start: 10px !important;
+        padding-bottom: 10px !important;
+        padding-inline-end: 24px !important;
+        padding-inline-start: 24px !important;
+        padding-left: 24px !important;
+        padding-right: 24px !important;
+        padding-top: 10px !important;
+        text-align: center !important;
+        text-decoration-color: rgb(63, 122, 180) !important;
+        text-decoration-line: none !important;
+        text-decoration-skip-ink: auto !important;
+        text-decoration-style: solid !important;
+        text-decoration-thickness: 0.5px !important;
+        text-indent: 0px !important;
+        text-rendering: auto !important;
+        text-shadow: none !important;
+        text-size-adjust: 100% !important;
+        text-transform: none !important;
+        text-underline-offset: 4.8px !important;
+        text-wrap: nowrap !important;
+        user-select: none !important;
+        white-space-collapse: preserve !important;
+        width: 140px !important;
+        word-spacing: 0px !important;
+        -webkit-font-smoothing: antialiased !important;
+        -webkit-rtl-ordering: logical !important;
+        -webkit-border-image: none !important;
     }
-}
+    
+
 
 
 
