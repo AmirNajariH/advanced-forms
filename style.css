@@ -1,0 +1,56 @@
+/* This file is using css nesting: 
+    1. for having more information about the browsers that support this feature have a look at: https://caniuse.com/css-nesting
+    2. The production version of the file might not have this feature based on when it is published and what browsers are supporting nesting features 
+*/
+
+
+.form-group {
+    .form-control {
+        
+        &.textfield {
+             
+        }
+    
+        &.overauto {
+
+    
+        }
+    
+        &.dropdown {
+    
+            option {
+    
+            }
+    
+        }
+    
+    }
+
+    .radio-group {
+        label {
+
+        }
+
+        .radio {
+        
+        }
+    
+    }
+
+    .checkbox {
+        label {
+
+        }
+
+        input {
+
+        }
+    }
+    
+    button, .btn {
+
+    }
+}
+
+
+
