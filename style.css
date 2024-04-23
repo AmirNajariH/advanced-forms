@@ -236,15 +236,12 @@ textarea:hover {
     border-top-color: rgb(0, 62, 125) !important;
 }
 
-
 textarea:focus {
     outline-color: rgb(0, 133, 179) !important;
     outline-offset: 2px !important;
     outline-style: solid !important;
     outline-width: 3px !important;
 }
-
-
 
 .overauto {}
 
@@ -349,7 +346,6 @@ textarea:focus {
     outline-width: 2px !important;
 }
 
-
 .dropdown option {
     box-sizing: content-box !important;
     color: rgb(99, 99, 99) !important;
@@ -392,7 +388,6 @@ textarea:focus {
     -webkit-font-smoothing: antialiased !important;
     -webkit-rtl-ordering: logical !important;
 }
-
 
 /* .radio-group {
         box-sizing: border-box !important;
@@ -804,8 +799,6 @@ textarea:focus {
     -webkit-rtl-ordering: logical !important;
     -webkit-border-image: none !important;
 }
-
-
 
 .checkbox {}
 
