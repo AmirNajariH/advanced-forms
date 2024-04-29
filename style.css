@@ -609,7 +609,7 @@ form.panel .radio input {
   height: 1px !important;
   image-rendering: -webkit-optimize-contrast !important;
   letter-spacing: normal !important;
-  line-height: 24px !important;
+  line-height: 32px !important;
   margin-bottom: -1px !important;
   margin-left: -1px !important;
   margin-right: -1px !important;
@@ -688,7 +688,7 @@ form.panel .radio input:focus {
   height: 1px !important;
   image-rendering: -webkit-optimize-contrast !important;
   letter-spacing: normal !important;
-  line-height: 24px !important;
+  line-height: 32px !important;
   margin-bottom: -1px !important;
   margin-left: -1px !important;
   margin-right: -1px !important;
@@ -1173,4 +1173,8 @@ form.panel button:active, button.btn:active {
   
   form.panel .radio input.qld__input--error + label:before {
       box-shadow: 0 0 0 0.188em red !important;
+  }
+
+  form.panel * + * {
+    margin-top: 16px !important;
   }
