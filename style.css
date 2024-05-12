@@ -1192,3 +1192,7 @@ form.panel button:active, button.btn:active {
   form.panel textarea.g-recaptcha-response {
     display: none !important;
   }
+
+  textarea.g-recaptcha-response {
+    display: none !important;
+  }
