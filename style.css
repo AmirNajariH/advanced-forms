@@ -2,6 +2,9 @@
     Advanced-forms:
     This css needs to be included in every advanced forms through squiz advanced forms portal. 
 */
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:wght@300;400;600;900&amp;display=swap');
+
 form.panel label {
   box-sizing: border-box !important;
   color: rgb(65, 65, 65) !important;
@@ -1124,9 +1127,14 @@ form.panel button:active, button.btn:active {
       background-repeat: no-repeat !important;
       z-index: 100 !important;
       left: 0 !important;
-      border: 1px solid transparent !important;
+      border: 2px solid transparent !important;
       border-radius: 50% !important;
       top: 0 !important;
+  }
+
+  form.panel .parsley-error .radio input + label:before {
+    box-shadow: 0 0 0 3px #e22339 !important;
+    border-color: #444444 !important;
   }
   
   form.panel .radio input + label:before {
@@ -1194,5 +1202,38 @@ form.panel button:active, button.btn:active {
   }
 
   textarea.g-recaptcha-response {
+    display: none !important;
+  }
+
+  .panel-body {
+    padding: 0 !important;
+  }
+
+  /* @media (max-width: 991px) {
+    .panel-body {
+        padding: 0 !important;
+    }
+  } */
+
+  html {
+    padding-left: 32px !important;
+    padding-right: 32px !important;
+  }
+
+  .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    padding-left: 9px !important;
+  }
+
+  .parsley-errors-list, .parsley-errors-list * {
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+    color: #E22339 !important;
+  }
+
+  div.bar {
+    display: none !important;
+  }
+    
+  #nprogress {
     display: none !important;
   }
