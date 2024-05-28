@@ -1251,6 +1251,7 @@ form.panel button:active, button.btn:active {
     font-size: 16px !important;
     line-height: 1.5 !important;
     color: #E22339 !important;
+    margin-top: 16px
   }
 
   div.bar {
