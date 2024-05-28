@@ -66,7 +66,7 @@ form.panel span.text-danger {
   -webkit-font-smoothing: antialiased !important;
 }
 
-form.panel .textfield, form.panel .fileupload {
+form.panel .textfield, form.panel .fileupload, form.panel input[type="text"] {
   appearance: none !important;
   background-color: rgb(255, 255, 255) !important;
   border-bottom-color: rgb(122, 122, 122) !important;
@@ -140,7 +140,7 @@ form.panel .textfield, form.panel .fileupload {
   -webkit-border-image: none !important;
 }
 
-form.panel .textfield:hover {
+form.panel .textfield:hover, form.panel input[type="text"]:hover {
   background-color: rgb(245, 245, 245) !important;
   border-bottom-color: rgb(0, 62, 125) !important;
   border-left-color: rgb(0, 62, 125) !important;
@@ -148,7 +148,7 @@ form.panel .textfield:hover {
   border-top-color: rgb(0, 62, 125) !important;
 }
 
-form.panel .textfield:focus {
+form.panel .textfield:focus, form.panel input[type="text"]:focus {
   background-color: rgb(255, 255, 255) !important;
   border-bottom-color: rgb(235, 235, 235) !important;
   border-left-color: rgb(235, 235, 235) !important;
@@ -1136,6 +1136,21 @@ form.panel button:active, button.btn:active {
     box-shadow: 0 0 0 3px #e22339 !important;
     border-color: #444444 !important;
   }
+
+  form.panel .textfield.parsley-error, form.panel .fileupload.parsley-error, form.panel input[type="text"].parsley-error, form.panel textarea.parsley-error {
+    border-top-color: #ed5466 !important;
+    border-left-color: #ed5466 !important;
+    border-bottom-color: #ed5466 !important;
+    border-right-color: #ed5466 !important;
+  }
+
+  body.snapform p, body.snapform label {
+    color: #444444 !important;
+    display: block !important;
+    font-weight: 600 !important;
+    line-height: 24px !important;
+    font-size: 16px !important;
+  }
   
   form.panel .radio input + label:before {
       background-color: transparent !important;
@@ -1236,4 +1251,28 @@ form.panel button:active, button.btn:active {
     
   #nprogress {
     display: none !important;
+  }
+
+  span.help-block {
+    font-style: normal !important;
+    color: #636363 !important;
+    display: block !important;
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+  }
+
+  body.snapform .form-group {
+    margin-bottom: 0 !important;
+    margin-top: 24px !important;
+  }
+
+  body.snapform .snap-field {
+    margin-bottom: 0 !important;
+  }
+
+  @media (min-width: 992px) {
+    body.snapform .form-group {
+      margin-bottom: 0 !important;
+      margin-top: 32px !important;
+    }
   }
