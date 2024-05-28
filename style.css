@@ -67,6 +67,7 @@ form.panel span.text-danger {
 }
 
 form.panel .textfield, form.panel .fileupload, form.panel input[type="text"] {
+  max-width: 50% !important;
   appearance: none !important;
   background-color: rgb(255, 255, 255) !important;
   border-bottom-color: rgb(122, 122, 122) !important;
@@ -138,6 +139,10 @@ form.panel .textfield, form.panel .fileupload, form.panel input[type="text"] {
   -webkit-font-smoothing: antialiased !important;
   -webkit-rtl-ordering: logical !important;
   -webkit-border-image: none !important;
+}
+
+form.panel .fileupload {
+  max-width: 100% !important;
 }
 
 form.panel .textfield:hover, form.panel input[type="text"]:hover {
@@ -214,7 +219,7 @@ form.panel textarea {
   margin-left: 0px !important;
   margin-right: 0px !important;
   margin-top: 8px !important;
-  max-width: 100% !important;
+  max-width: 50% !important;
   overflow-wrap: break-word !important;
   padding-bottom: 12px !important;
   padding-left: 16px !important;
@@ -314,6 +319,7 @@ form.panel .dropdown {
   margin-left: 0px !important;
   margin-right: 0px !important;
   margin-top: 8px !important;
+  max-width: 50%;
   overflow-x: visible !important;
   overflow-y: visible !important;
   padding-bottom: 12px !important;
@@ -337,6 +343,8 @@ form.panel .dropdown {
   -webkit-rtl-ordering: logical !important;
   -webkit-border-image: none !important;
 }
+
+
 
 form.panel .dropdown:hover {
   background-color: rgb(245, 245, 245) !important;
@@ -1212,13 +1220,13 @@ form.panel button:active, button.btn:active {
     display: none !important;
   }
 
-  form.panel textarea.g-recaptcha-response {
+  /* form.panel textarea.g-recaptcha-response {
     display: none !important;
   }
 
   textarea.g-recaptcha-response {
     display: none !important;
-  }
+  } */
 
   .panel-body {
     padding: 0 !important;
