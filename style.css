@@ -410,6 +410,7 @@ form.panel .radio {
   box-sizing: border-box !important;
   color: rgb(65, 65, 65) !important;
   display: block !important;
+  margin-top: 16px !important;
   font-family: "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol" !important;
@@ -1252,8 +1253,9 @@ form.panel button:active, button.btn:active {
     font-style: normal !important;
     color: #636363 !important;
     display: block !important;
-    font-size: 14px !important;
-    line-height: 1.5 !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+    margin-top: 8px !important;
   }
 
   body.snapform .form-group .snap-field {
