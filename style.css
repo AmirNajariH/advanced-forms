@@ -14,7 +14,6 @@ form.panel label {
   pointer-events: auto !important;
   text-size-adjust: 100% !important;
   vertical-align: middle !important;
-  /* width: 884.172px !important; */
   -webkit-font-smoothing: antialiased !important;
 }
 
@@ -57,7 +56,6 @@ form.panel span.text-danger {
   text-decoration-style: solid !important;
   text-decoration-thickness: auto !important;
   text-size-adjust: 100% !important;
-  /* width: 8.96875px !important; */
   -webkit-font-smoothing: antialiased !important;
 }
 
@@ -450,7 +448,6 @@ form.panel .radio label {
   position: relative !important;
   text-size-adjust: 100% !important;
   vertical-align: middle !important;
-  /* width: 884.172px !important; */
   -webkit-font-smoothing: antialiased !important;
 }
 
@@ -1041,10 +1038,6 @@ form.panel button:active, button.btn:active {
   text-decoration-thickness: auto !important;
 }
 
-/* experimental */
-/* rgb(122, 122, 122) disable */
-
-
  form.panel .checkbox input:hover + label:before {
       background-color: rgb(224, 224, 224) !important;
   }
@@ -1123,7 +1116,13 @@ form.panel button:active, button.btn:active {
     border-color: #444444 !important;
   }
 
-  form.panel .textfield.parsley-error, form.panel .fileupload.parsley-error, form.panel input[type="text"].parsley-error, form.panel textarea.parsley-error {
+  
+  form.panel .parsley-error .checkbox input + label:before {
+    box-shadow: 0 0 0 3px #e22339 !important;
+    border-color: #444444 !important;
+  }
+
+  form.panel .dropdown.parsley-error, form.panel .textfield.parsley-error, form.panel .fileupload.parsley-error, form.panel input[type="text"].parsley-error, form.panel textarea.parsley-error {
     border-top-color: #ed5466 !important;
     border-left-color: #ed5466 !important;
     border-bottom-color: #ed5466 !important;
@@ -1153,7 +1152,6 @@ form.panel button:active, button.btn:active {
   }
   
   form.panel .radio input:checked + label:after {
-      /* Include QLD-getControlShape function result */
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle fill='var(--QLD-color-light-text)' cx='16' cy='16' r='12'/%3E%3C/svg%3E") !important;
       background-repeat: no-repeat !important;
       background-color: white !important;
@@ -1174,12 +1172,11 @@ form.panel button:active, button.btn:active {
   }
   
   form.panel .radio input:disabled + label {
-      /* color: var(--QLD-color-light-text__muted) !important; */
       cursor: not-allowed !important;
   }
   
   form.panel .radio input:disabled:checked + label:after {
-      opacity: 0.5 !important; /* Include QLD-getControlShape function result */
+      opacity: 0.5 !important;
   }
   
   form.panel .radio input.qld__input--valid + label:before {
@@ -1223,12 +1220,6 @@ form.panel button:active, button.btn:active {
   .panel-body {
     padding: 0 !important;
   }
-
-  /* @media (max-width: 991px) {
-    .panel-body {
-        padding: 0 !important;
-    }
-  } */
 
   .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
     padding-left: 9px !important;
@@ -1303,10 +1294,6 @@ form.panel button:active, button.btn:active {
     padding-left: 4px !important;
   }
 
-  div.panel-body {
-    /* padding-left: 8px !important; */
-  }
-
   html {
     padding-left: 0 !important;
     padding-right: 32px !important;
@@ -1321,10 +1308,6 @@ form.panel button:active, button.btn:active {
     padding-top: 0 !important;
   }
 
-  /* div.spinner, div.spinner div {
-    background: black !important;
-  } */
-
   @media (max-width: 699px) {
     form.panel .dropdown, form.panel textarea, form.panel .textfield, form.panel .fileupload, form.panel input[type="text"] {
       max-width: 100% !important;
@@ -1334,3 +1317,55 @@ form.panel button:active, button.btn:active {
   div.spinner, div.spinner div {
     left: 10px !important;
   }
+
+  /* success message styling */
+
+.snapform .panel .qld__page-alerts.qld__page-alerts--success {
+  border-color: #339d37;
+}
+.snapform .panel .qld__page-alerts {
+   padding: 16px;
+  font-size: 16px;
+  line-height: 1.5;
+  position: relative;
+  border: solid 2px #0085b3;
+  border-left-width: 48px;
+  border-radius: 4px;
+  word-wrap: break-word;
+  background-color: #fff;
+}
+
+.snapform .panel .qld__page-alerts.qld__page-alerts--success::before {
+  background-color: #fff;
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='currentColor' d='M235.3 331.3C229.1 337.6 218.9 337.6 212.7 331.3L148.7 267.3C142.4 261.1 142.4 250.9 148.7 244.7C154.9 238.4 165.1 238.4 171.3 244.7L224 297.4L340.7 180.7C346.9 174.4 357.1 174.4 363.3 180.7C369.6 186.9 369.6 197.1 363.3 203.3L235.3 331.3zM512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM256 32C132.3 32 32 132.3 32 256C32 379.7 132.3 480 256 480C379.7 480 480 379.7 480 256C480 132.3 379.7 32 256 32z'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='currentColor' d='M235.3 331.3C229.1 337.6 218.9 337.6 212.7 331.3L148.7 267.3C142.4 261.1 142.4 250.9 148.7 244.7C154.9 238.4 165.1 238.4 171.3 244.7L224 297.4L340.7 180.7C346.9 174.4 357.1 174.4 363.3 180.7C369.6 186.9 369.6 197.1 363.3 203.3L235.3 331.3zM512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM256 32C132.3 32 32 132.3 32 256C32 379.7 132.3 480 256 480C379.7 480 480 379.7 480 256C480 132.3 379.7 32 256 32z'/%3E%3C/svg%3E");
+}
+
+.snapform .panel .qld__page-alerts::before {
+  content: " ";
+  width: 20px;
+  width: 20px;
+  height: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: text-top;
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath fill='currentColor' d='M224 184c13.25 0 24-10.74 24-24c0-13.25-10.75-24-24-24S200 146.7 200 160C200 173.3 210.7 184 224 184zM384 32H64C28.65 32 0 60.65 0 96v320c0 35.35 28.65 64 64 64h320c35.35 0 64-28.65 64-64V96C448 60.65 419.3 32 384 32zM416 416c0 17.64-14.36 32-32 32H64c-17.64 0-32-14.36-32-32V96c0-17.64 14.36-32 32-32h320c17.64 0 32 14.36 32 32V416zM272 352h-32V240C240 231.2 232.8 224 224 224H192C183.2 224 176 231.2 176 240S183.2 256 192 256h16v96h-32C167.2 352 160 359.2 160 368C160 376.8 167.2 384 176 384h96c8.836 0 16-7.164 16-16C288 359.2 280.8 352 272 352z'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath fill='currentColor' d='M224 184c13.25 0 24-10.74 24-24c0-13.25-10.75-24-24-24S200 146.7 200 160C200 173.3 210.7 184 224 184zM384 32H64C28.65 32 0 60.65 0 96v320c0 35.35 28.65 64 64 64h320c35.35 0 64-28.65 64-64V96C448 60.65 419.3 32 384 32zM416 416c0 17.64-14.36 32-32 32H64c-17.64 0-32-14.36-32-32V96c0-17.64 14.36-32 32-32h320c17.64 0 32 14.36 32 32V416zM272 352h-32V240C240 231.2 232.8 224 224 224H192C183.2 224 176 231.2 176 240S183.2 256 192 256h16v96h-32C167.2 352 160 359.2 160 368C160 376.8 167.2 384 176 384h96c8.836 0 16-7.164 16-16C288 359.2 280.8 352 272 352z'/%3E%3C/svg%3E");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  background-color: #fff;
+  position: absolute;
+  left: -24px;
+  left: -24px;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.snapform .panel .qld__page-alerts .qld__page-alerts--heading.qld__display-lg {
+  color: #03213F;
+  margin-bottom: 16px;
+  margin-bottom: 16px;
+}
