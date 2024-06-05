@@ -1234,7 +1234,7 @@ form.panel button:active, button.btn:active {
     padding-left: 9px !important;
   }
 
-  .parsley-errors-list, .parsley-errors-list * {
+  div.errorcontainer_fileupload, .parsley-errors-list, .parsley-errors-list * {
     font-size: 16px !important;
     line-height: 1.5 !important;
     color: #E22339 !important;
@@ -1319,4 +1319,18 @@ form.panel button:active, button.btn:active {
   div.snap-field.snapfield-fieldtype_heading {
     margin-top: 0 !important;
     padding-top: 0 !important;
+  }
+
+  /* div.spinner, div.spinner div {
+    background: black !important;
+  } */
+
+  @media (max-width: 699px) {
+    form.panel .dropdown, form.panel textarea, form.panel .textfield, form.panel .fileupload, form.panel input[type="text"] {
+      max-width: 100% !important;
+    }
+  }
+
+  div.spinner, div.spinner div {
+    left: 10px !important;
   }
